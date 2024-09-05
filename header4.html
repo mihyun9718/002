@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header4 연습</title>
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+<style>
+    .inner {
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+
+    .header .inner {
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 120px;
+    }
+
+    .header .inner h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .header .gnb>ul {
+        display: flex;
+        gap: 40px;
+    }
+
+    .header .utils {
+        margin-left: auto;
+    }
+
+    .main_visual {
+        background: #ddd;
+        height: 480px;
+    }
+
+    .footer {
+        text-align: center;
+        height: 120px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="inner">
+            <h1>
+                <a href="/">
+                    <img src="./img/logo02.png" alt="">
+                </a>
+            </h1>
+            <nav class="gnb">
+                <ul>
+                    <li><a href="">menu1</a></li>
+                    <li><a href="">menu2</a></li>
+                    <li><a href="">menu3</a></li>
+                    <li><a href="">menu4</a></li>
+                </ul>
+            </nav>
+            <div class="utils">
+                <button><img src="./img/menu (1).svg" alt=""></button>
+            </div>
+        </div>
+    </header>
+    <main id="content">
+        <section class="main_visual"></section>
+    </main>
+</body>
+</html>
